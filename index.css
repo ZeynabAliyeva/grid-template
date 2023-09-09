@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+body {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.leftBox {
+  margin: 24px;
+  display: grid;
+  justify-content: center;
+}
+.leftBoxHeader {
+  height: 110px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 50px;
+}
+.logo {
+  height: 45px;
+  margin: 25px 0;
+}
+.leftNavBar {
+  margin: 25px 0;
+  padding: 15px;
+  text-align: end;
+}
+.leftNavBar span {
+  padding: 4px;
+}
+.disabled {
+  color: #a0aec0;
+}
+.leftBoxMain {
+  display: grid;
+  align-items: center;
+}
+.leftBoxMain h2 {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+}
+h2 span {
+  color: #a0aec0;
+}
+
+.tel {
+  display: grid;
+  align-items: center;
+  position: relative;
+}
+.inpuTel {
+  padding-left: 75px;
+}
+.countryNumber {
+  width: 72px;
+  height: 33px;
+  background-color: #edf2f7;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  border-radius: 5px 0 0 5px;
+}
+.leftBoxForm {
+  display: grid;
+  flex-direction: column;
+}
+.generalİnputStyle {
+  width: 350px;
+  height: 35px;
+  border: 1px solid #cbd5e0;
+  border-radius: 5px;
+  margin-bottom: 24px;
+}
+.generaLabelStyle {
+  margin-bottom: 5px;
+  color: #2d3748;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+.nextInput {
+  background-color: #eaeef3;
+  color: #fff;
+}
+.btn {
+  background-color: #fff;
+  color: #1a202c;
+  margin-bottom: 80px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+}
+.orTextContainer {
+  color: #656567;
+  margin: 4px 0 24px;
+  display: grid;
+  justify-content: center;
+}
+.leftBoxFooter {
+  margin: 25px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #718096;
+  cursor: pointer;
+  text-align: end;
+  align-items: end;
+}
+
+.rightBox {
+  padding: 30px;
+  background-image: url(/assets/images/mainImg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.rightBox h1 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.checkBox {
+  width: 300px;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+}
+.checkBox span {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+}
+.checkBox span img {
+  margin-right: 7px;
+  width: 25px;
+  height: 25px;
+}
+.checkBox span:first-child {
+  margin-right: 40px;
+}
+.leftBoxBanner {
+  position: relative;
+}
+.moneyPhoto {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .rightBox {
+    display: none;
+  }
+  body {
+    grid-template-columns: 1fr;
+  }
+}
